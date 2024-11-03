@@ -2,24 +2,13 @@
 int main(void)
 {
     int N;
-    int i=0,j=0;
-
     scanf("%d",&N);
-    while(i<N)
+    for(int i=0;i<N;i++)
     {
-        ++i;
-        while(j<N-i)
-        {
+        for(int j=0;j<N-i-1;j++)
             printf(" ");
-            ++j;
-        }
-        j=0;
-        while (j<i)
-        {
+        for(int j=0;j<i+1;j++)
             printf("*");
-            ++j;
-        }
-        j=0;
         printf("\n");
     }
     return 0;
